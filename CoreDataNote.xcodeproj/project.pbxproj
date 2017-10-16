@@ -10,10 +10,11 @@
 		843AD8A71F930C6700C787A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AD8A61F930C6700C787A1 /* AppDelegate.m */; };
 		843AD8AA1F930C6700C787A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AD8A91F930C6700C787A1 /* ViewController.m */; };
 		843AD8AD1F930C6700C787A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843AD8AB1F930C6700C787A1 /* Main.storyboard */; };
-		843AD8B01F930C6700C787A1 /* CoreDataNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 843AD8AE1F930C6700C787A1 /* CoreDataNote.xcdatamodeld */; };
 		843AD8B21F930C6700C787A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843AD8B11F930C6700C787A1 /* Assets.xcassets */; };
 		843AD8B51F930C6700C787A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843AD8B31F930C6700C787A1 /* LaunchScreen.storyboard */; };
 		843AD8B81F930C6700C787A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AD8B71F930C6700C787A1 /* main.m */; };
+		843AD8D61F9325B400C787A1 /* CoreDataNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 843AD8AE1F930C6700C787A1 /* CoreDataNote.xcdatamodeld */; };
+		843AD9011F9383FF00C787A1 /* Clothes+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AD8FF1F9383FF00C787A1 /* Clothes+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,10 @@
 		843AD8B41F930C6700C787A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843AD8B61F930C6700C787A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843AD8B71F930C6700C787A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		843AD8FC1F9383FF00C787A1 /* Clothes+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clothes+CoreDataProperties.h"; sourceTree = "<group>"; };
+		843AD8FD1F9383FF00C787A1 /* Clothes+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clothes+CoreDataClass.h"; sourceTree = "<group>"; };
+		843AD8FE1F9383FF00C787A1 /* Clothes+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Clothes+CoreDataClass.m"; sourceTree = "<group>"; };
+		843AD8FF1F9383FF00C787A1 /* Clothes+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Clothes+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,10 @@
 		843AD8A41F930C6700C787A1 /* CoreDataNote */ = {
 			isa = PBXGroup;
 			children = (
+				843AD8FC1F9383FF00C787A1 /* Clothes+CoreDataProperties.h */,
+				843AD8FF1F9383FF00C787A1 /* Clothes+CoreDataProperties.m */,
+				843AD8FD1F9383FF00C787A1 /* Clothes+CoreDataClass.h */,
+				843AD8FE1F9383FF00C787A1 /* Clothes+CoreDataClass.m */,
 				843AD8A51F930C6700C787A1 /* AppDelegate.h */,
 				843AD8A61F930C6700C787A1 /* AppDelegate.m */,
 				843AD8A81F930C6700C787A1 /* ViewController.h */,
@@ -145,10 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843AD9011F9383FF00C787A1 /* Clothes+CoreDataProperties.m in Sources */,
+				843AD8D61F9325B400C787A1 /* CoreDataNote.xcdatamodeld in Sources */,
 				843AD8AA1F930C6700C787A1 /* ViewController.m in Sources */,
 				843AD8A71F930C6700C787A1 /* AppDelegate.m in Sources */,
 				843AD8B81F930C6700C787A1 /* main.m in Sources */,
-				843AD8B01F930C6700C787A1 /* CoreDataNote.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPDNC8PW8J;
 				INFOPLIST_FILE = CoreDataNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taitanxiami.CoreDataNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPDNC8PW8J;
 				INFOPLIST_FILE = CoreDataNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taitanxiami.CoreDataNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
